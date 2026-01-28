@@ -395,7 +395,7 @@ blockquote.poetic-quote::before {
     color: var(--accent-color);
     position: absolute;
     top: -20px;
-    left: 15px;
+    left: 35px;
     opacity: 0.3;
 }
 
@@ -405,7 +405,7 @@ blockquote.poetic-quote::after {
     color: var(--accent-color);
     position: absolute;
     bottom: -40px;
-    right: 15px;
+    right: 35px;
     opacity: 0.3;
 }
 
