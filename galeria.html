@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Galeria de fotos da Confraria do Ralador. Momentos, vindimas e paisagens da Quinta Dona Maria em Lazarim.">
+    <meta name="keywords" content="Fotos, Galeria, Imagens, Lazarim, Vinha, Douro">
+    <meta name="author" content="Quinta Dona Maria">
+    <title>Galeria :: Confraria do Ralador</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/cookies.js" defer></script>
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 40px 0;
+        }
+
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <div class="logo">Quinta Dona Maria</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="vinhos.html">Vinhos</a></li>
+                    <li><a href="quem-somos.html">QUEM SOMOS</a></li>
+                    <li><a href="galeria.html" class="active">GALERIA</a></li>
+                    <li><a href="estatutos.html">ESTATUTOS</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li class="lang-selector"><span>PT</span> | <a href="#" style="opacity: 0.5;">EN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Galeria</h1>
+            <h3>Outras Memórias</h3>
+            <p>Momentos e detalhes que fazem a nossa história.</p>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/galeria/galeria_ref_01.png" alt="Memória Confraria"></div>
+                <div class="gallery-item"><img src="images/galeria/galeria_ref_02.png" alt="Memória Confraria"></div>
+                <div class="gallery-item"><img src="images/galeria/galeria_ref_03.png" alt="Memória Confraria"></div>
+                <div class="gallery-item"><img src="images/galeria/galeria_ref_04.png" alt="Memória Confraria"></div>
+                <div class="gallery-item"><img src="images/galeria/galeria_ref_05.png" alt="Memória Confraria"></div>
+                <div class="gallery-item"><img src="images/galeria/galeria_extra_new_01.png" alt="Memória Confraria">
+                </div>
+                <div class="gallery-item"><img src="images/galeria/galeria_extra_new_02.png" alt="Memória Confraria">
+                </div>
+                <div class="gallery-item"><img src="images/galeria/galeria_extra_new_03.png" alt="Memória Confraria">
+                </div>
+                <div class="gallery-item"><img src="images/galeria/galeria_extra_new_04.png" alt="Memória Confraria">
+                </div>
+                <div class="gallery-item"><img src="images/galeria/galeria_extra_new_05.png" alt="Memória Confraria">
+                </div>
+                <div class="gallery-item"><img src="images/galeria/galeria_extra_v2_01.png" alt="Memória Confraria">
+                </div>
+                <div class="gallery-item"><img src="images/galeria/galeria_extra_v2_02.png" alt="Memória Confraria">
+                </div>
+                <div class="gallery-item"><img src="images/galeria/galeria_extra_v2_03.png" alt="Memória Confraria">
+                </div>
+                <div class="gallery-item"><img src="images/galeria/galeria_extra_v2_04.png" alt="Memória Confraria">
+                </div>
+                <div class="gallery-item"><img src="images/galeria/ralador_antigo.png" alt="O Ralador Antigo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mega-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Confraria do Ralador</h4>
+                    <p>Vinhos cheios de luz e tradição. Produzidos com paixão em Lazarim, Lamego.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="vinhos.html">Vinhos</a></li>
+                        <li><a href="quem-somos.html">Quem Somos</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="estatutos.html">Estatutos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacte-nos</h4>
+                    <p>Quinta Dona Maria<br>Lazarim - Lamego</p>
+                    <p>m.castro.fernando@gmail.com</p>
+                    <div class="social-links">
+                        <a href="#">Fb</a>
+                        <a href="#">In</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Confraria do Ralador. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="back-to-top" title="Voltar ao topo">&#8679;</div>
+    <script src="js/animations.js"></script>
+</body>
+
+</html>
