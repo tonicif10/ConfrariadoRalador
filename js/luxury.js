@@ -4,10 +4,21 @@ document.addEventListener("DOMContentLoaded", function () {
     // --- 1. Preloader ---
     const preloader = document.getElementById('preloader');
     if (preloader) {
-        // Minimum display time of 500ms to allow logo to be seen
-        setTimeout(() => {
-            preloader.classList.add('fade-out');
-        }, 800);
+        // Check if preloader has already been shown in this session
+        if (sessionStorage.getItem("preloaderSeen")) {
+            // Already seen, hide immediately (no animation)
+            preloader.style.display = 'none';
+        } else {
+            // First visit, show animation and set flag
+            setTimeout(() => {
+                preloader.classList.add('fade-out');
+                // Remove from DOM after transition to prevent blocking
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                }, 500);
+            }, 1500); // Increased time slightly for the longer text
+            sessionStorage.setItem("preloaderSeen", "true");
+        }
     }
 
     // --- 2. 3D Tilt Effect (Only on desktops/cards) ---
