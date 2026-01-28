@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 setTimeout(() => {
                     preloader.style.display = 'none';
                 }, 500);
-            }, 1500); // Increased time slightly for the longer text
+            }, 3500); // Increased time to 3.5s per user request
             sessionStorage.setItem("preloaderSeen", "true");
         }
     }
