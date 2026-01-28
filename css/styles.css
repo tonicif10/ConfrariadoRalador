@@ -1008,8 +1008,10 @@ body.clean-page nav ul li a::after {
     color: var(--primary-color);
     font-size: 1.1em;
     display: block;
-    margin-bottom: 2px;
-    /* Very tight label */
+    margin-bottom: 0;
+    /* Removed margin completely to bring text closer */
+    line-height: 1.2;
+    /* Tighten line height for the label itself */
 }
 
 .contact-quote {
