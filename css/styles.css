@@ -918,3 +918,116 @@ nav ul li a.active::after {
     transform: translateX(100%);
     transition: transform 0.8s;
 }
+/* --- Clean Page Styles (Contact) --- */
+body.clean-page {
+    padding-top: 100px; /* Space for fixed header */
+    background-color: #fff;
+}
+
+body.clean-page header {
+    background-color: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+body.clean-page .logo,
+body.clean-page nav ul li a {
+    color: var(--primary-color) !important;
+    text-shadow: none !important;
+}
+
+body.clean-page nav ul li a::after {
+    background-color: var(--accent-color);
+}
+
+/* Specific Contact Styling to match screenshot */
+.contact-page-title {
+    font-size: 3em; 
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-page-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color);
+    margin: 15px auto; /* Centered underline */
+}
+
+/* Left Align for desktop if needed, but screenshot looks centered title? 
+   Correction: Screenshot shows "Onde estamos" centered in its column or page? 
+   Hard to tell relation to page width without full screen. 
+   Assuming centered based on previous "Luxury" style, but will check layout.
+*/
+
+.contact-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-info-side {
+    text-align: left; /* Text aligns left */
+    padding: 20px;
+}
+
+.contact-info-side h2 {
+    text-align: left;
+    display: inline-block;
+}
+
+.contact-info-side h2::after {
+    margin: 10px 0 0 0; /* Left align underline */
+}
+
+.contact-details p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #444;
+}
+
+.contact-details strong {
+    color: var(--primary-color);
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-quote {
+    font-style: italic;
+    color: #888;
+    margin-top: 40px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+}
+
+.social-simple a {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+/* Map Card */
+.map-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background: #fff;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .contact-content-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
