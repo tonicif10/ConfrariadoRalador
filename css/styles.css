@@ -403,8 +403,8 @@ blockquote.poetic-quote::after {
     font-size: 4em;
     color: var(--accent-color);
     position: absolute;
-    bottom: -60px;
-    right: 20px;
+    bottom: -40px;
+    right: 60px;
     opacity: 0.3;
 }
 
