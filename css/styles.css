@@ -404,7 +404,7 @@ blockquote.poetic-quote::after {
     color: var(--accent-color);
     position: absolute;
     bottom: -60px;
-    right: 0;
+    right: 20px;
     opacity: 0.3;
 }
 
