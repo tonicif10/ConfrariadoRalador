@@ -385,7 +385,8 @@ blockquote.poetic-quote {
     max-width: 800px;
     margin: 40px auto;
     position: relative;
-    padding: 0 40px;
+    padding: 0 70px;
+    /* Increased padding to make room for quotes */
 }
 
 blockquote.poetic-quote::before {
@@ -394,7 +395,8 @@ blockquote.poetic-quote::before {
     color: var(--accent-color);
     position: absolute;
     top: -20px;
-    left: 0;
+    left: 20px;
+    /* Symmetrical positioning */
     opacity: 0.3;
 }
 
@@ -404,7 +406,8 @@ blockquote.poetic-quote::after {
     color: var(--accent-color);
     position: absolute;
     bottom: -40px;
-    right: 60px;
+    right: 20px;
+    /* Placed in the comfortable padded area */
     opacity: 0.3;
 }
 
